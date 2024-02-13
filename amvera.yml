@@ -1,0 +1,11 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.9
+build:
+  requirementsPath: requirements.txt
+run:
+  command: gunicorn ci_proj.wsgi --log-file - --log-level debug
+  persistenceMount: /data
+  containerPort: 80
