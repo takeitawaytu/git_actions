@@ -1,1 +1,1 @@
-web: gunicorn task_manager.wsgi --log-file - --log-level debug
+web: gunicorn ci_proj.wsgi --log-file - --log-level debug
