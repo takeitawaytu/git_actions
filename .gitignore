@@ -1,0 +1,17 @@
+#.gitignore
+
+#virtualenv
+/.venv/*
+/.idea/*
+__pycache__/
+venv
+
+#pytest
+.pytest_cache
+
+#coverage
+.coverage
+coverage.xml
+
+#db
+db.sqlite3
